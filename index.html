@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="app" class="container dark-theme">
+        <div class="clock-container">
+            <!-- Horloge principale -->
+            <div class="clock-section">
+                <div id="time" class="time-display">00:00:00</div>
+                <div id="date" class="date-display">Loading...</div>
+            </div>
+
+            <!-- Sélecteur de thèmes -->
+            <div class="theme-selector">
+                <button class="theme-btn active" data-theme="dark">
+                    <span class="icon">🌙</span>
+                    <span class="label">Dark</span>
+                </button>
+                <button class="theme-btn" data-theme="light">
+                    <span class="icon">☀</span>
+                    <span class="label">Light</span>
+                </button>
+                <button class="theme-btn" data-theme="neon">
+                    <span class="icon">⚡</span>
+                    <span class="label">Neon</span>
+                </button>
+                <button class="theme-btn" data-theme="retro">
+                    <span class="icon">🎨</span>
+                    <span class="label">Retro</span>
+                </button>
+            </div>
+
+            <!-- Indicateur de battement -->
+            <div class="pulse-indicator">
+                <div class="pulse-dot"></div>
+            </div>
+
+            
+
+            <!-- Info supplémentaire -->
+            <div id="timezone" class="timezone-info">
+                Timezone: Loading...
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
